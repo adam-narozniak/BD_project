@@ -31,3 +31,6 @@ application {
     // Define the main class for the application.
     mainClass = 'pw.bd.project.App'
 }
+run{
+    standardInput = System.in
+}

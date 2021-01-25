@@ -9,6 +9,7 @@ import java.sql.Connection;
 import java.sql.DatabaseMetaData;
 import java.sql.SQLException;
 import java.util.Properties;
+import java.util.Scanner;
 
 import static java.lang.System.exit;
 
@@ -24,6 +25,8 @@ public class DB_utils {
     private static String password;
     private static String port;
     private static String serviceName;
+
+    private static Scanner scanner = new Scanner(System.in);
 
 
     private static void loadData() throws IOException {
@@ -69,5 +72,9 @@ public class DB_utils {
 
     public static Connection getConn() {
         return conn;
+    }
+
+    public static Scanner getScanner() {
+        return scanner;
     }
 }
